@@ -1,0 +1,159 @@
+{
+  "main": {
+    "name": "Petra Kirschner",
+    "occupation": "Event manager/organizer",
+    "description": "Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "image": "profilepic.jpg",
+    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "email": "kp.kirschnerpetra@gmail.com ",
+    "phone": "+36-20-379-93-97",
+    "address": {
+      "street": "Rózsa Street",
+      "city": "Budapest",
+      "state": "Pest",
+      "zip": "1077"
+    },
+    "website": "http://www.kirschnerpetraeventmanager.com",
+    "resumedownload": "http://kirschnerpetra.com",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/petra.kirschner.9",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "twitter",
+        "url": "http://twitter.com",
+        "className": "fa fa-twitter"
+      },
+      {
+        "name": "google-plus",
+        "url": "http://googleplus.com/tbakerx",
+        "className": "fa fa-google-plus"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/tim-baker-8420009a/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/petra_kirsch/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "skype",
+        "url": "http://skype.com",
+        "className": "fa fa-skype"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
+    "education": [
+      {
+        "school": "Pécsi Tudományegyetem",
+        "degree": "Viselkedéselemző / Pszichológia BSc",
+        "graduated": "June 2016",
+        "description": "BSc - alapdiploma"
+      },
+      {
+        "school": "Lukács Oktatási Központ",
+        "degree": "Grafológus",
+        "graduated": "May 2015",
+        "description": "OKJ-rendszerű tanfolyam"
+      }
+    ],
+    "work": [
+      {
+        "company": "ITI MUSIC Kft ",
+        "title": "Booking Manager ",
+        "years": "Febr 2019 - Present",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "company": "Akvárium Klub Kft",
+        "title": "Program organizer ",
+        "years": "Jun 2018 - Apr 2019",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      },
+      {
+        "company": "Est Café Kft",
+        "title": "Program organizer ",
+        "years": "Jan 2016 - Jun 2018",
+        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Attention to detail",
+        "level": "100%"
+      },
+      {
+        "name": "Communication",
+        "level": "100%"
+      },
+      {
+        "name": "Problem-solving",
+        "level": "97%"
+      },
+      {
+        "name": "Negotiation",
+        "level": "90%"
+      },
+      {
+        "name": "Multitasking",
+        "level": "100%"
+      },
+      {
+        "name": "Budgeting",
+        "level": "95%"
+      },
+      {
+        "name": "Creativity",
+        "level": "110%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Intim Torna Illegál",
+        "category": "Bokking Manager",
+        "image": "iti.jpg",
+        "url": "https://intimtornaillegal.hu/"
+      },
+      {
+        "title": "Akvárium Klub",
+        "category": "Program Organizer",
+        "image": "akva.jpg",
+        "url": "https://akvariumklub.hu/"
+      },
+      {
+        "title": "Pécsi Est",
+        "category": "Mittomén",
+        "image": "pécsiest.jpg",
+        "url": "http://pecsiestcafe.hu/"
+      },
+      {
+        "title": "Szenes Klub",
+        "category": "Nyilván valami szervezés",
+        "image": "szenes.jpg",
+        "url": "https://www.facebook.com/szenesklub/"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "You’ve been with us for so many years, you are a part of our NEARC family. You may not understand all of our nerdy GIS speak, but you fit right in and we are so thankful you are with us",
+        "user": "Louisa Ragen"
+      },
+      {
+        "text": "Thank you very sincerely for your expert services in the production of the Roundtable's Summer Celebration. To say that -we couldn't have done it without you- is a gross understatement... and you can quote me on that!",
+        "user": "Lisa Monroe"
+      }
+    ]
+  }
+}
