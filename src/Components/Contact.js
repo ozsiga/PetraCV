@@ -29,7 +29,13 @@ class Contact extends Component {
 
         <div className="row">
           <div className="eight columns">
-            <form action="" method="post" id="contactForm" name="contactForm">
+            <form
+              action=""
+              method="post"
+              id="contactForm"
+              name="contactForm"
+              data-netlify="true"
+            >
               <fieldset>
                 <div>
                   <label htmlFor="contactName">
@@ -40,7 +46,7 @@ class Contact extends Component {
                     defaultValue=""
                     size="35"
                     id="contactName"
-                    name="contactName"
+                    name="name"
                     onChange={this.handleChange}
                   />
                 </div>
@@ -50,11 +56,11 @@ class Contact extends Component {
                     Email <span className="required">*</span>
                   </label>
                   <input
-                    type="text"
+                    type="email"
                     defaultValue=""
                     size="35"
                     id="contactEmail"
-                    name="contactEmail"
+                    name="email"
                     onChange={this.handleChange}
                   />
                   />
@@ -67,7 +73,7 @@ class Contact extends Component {
                     defaultValue=""
                     size="35"
                     id="contactSubject"
-                    name="contactSubject"
+                    name="subject"
                     onChange={this.handleChange}
                   />
                   />
@@ -81,18 +87,40 @@ class Contact extends Component {
                     cols="50"
                     rows="15"
                     id="contactMessage"
-                    name="contactMessage"
+                    name="message"
                   />
                 </div>
 
                 <div>
-                  <button className="submit">Submit</button>
+                  <button className="submit" type="submit">
+                    Submit
+                  </button>
                   <span id="image-loader">
                     <img alt="" src="images/loader.gif" />
                   </span>
                 </div>
               </fieldset>
             </form>
+            {/* <form name="contact" method="POST" data-netlify="true">
+              <p>
+                <label>
+                  Your Name: <input type="text" name="name" />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Your Email: <input type="email" name="email" />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Message: <textarea name="message" />
+                </label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form> */}
 
             <div id="message-warning"> Error boy</div>
             <div id="message-success">
