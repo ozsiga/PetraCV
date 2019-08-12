@@ -29,7 +29,7 @@ class Contact extends Component {
 
         <div className="row">
           <div className="eight columns">
-            <form
+            {/* <form
               action=""
               method="post"
               id="contactForm"
@@ -100,8 +100,8 @@ class Contact extends Component {
                   </span>
                 </div>
               </fieldset>
-            </form>
-            {/* <form name="contact" method="POST" data-netlify="true">
+            </form> */}
+            <form name="contact" method="POST" data-netlify="true">
               <p>
                 <label>
                   Your Name: <input type="text" name="name" />
@@ -120,7 +120,7 @@ class Contact extends Component {
               <p>
                 <button type="submit">Send</button>
               </p>
-            </form> */}
+            </form>
 
             <div id="message-warning"> Error boy</div>
             <div id="message-success">
