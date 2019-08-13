@@ -32,8 +32,7 @@ body {
 
 header {
   position: relative;
-  height: 800px;
-  min-height: 500px;
+  height: 100vh;
   width: 100%;
   background: #161415 url(../images/header-background1.jpg) no-repeat top center;
   background-size: cover !important;
@@ -41,17 +40,15 @@ header {
   text-align: center;
   overflow: hidden;
 }
-header:after {
+/* header:after {
   content: "";
-  height: 800px;
-  min-height: 500px;
+  height: 100vh;
   width: 100%;
   top: 0;
   left: 0;
   position: absolute;
-  background: rgba(0, 0, 0, 0.9);
-  z-index: -100;
-}
+  background: rgba(0, 0, 0, 0.5);
+} */
 
 /* vertically center banner section */
 header:before {
@@ -75,7 +72,6 @@ header .banner-text {
 header .banner-text h1 {
   font: 90px/1.1em "opensans-bold", sans-serif;
   color: #fff;
-  z-index: 1000;
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
@@ -83,7 +79,6 @@ header .banner-text h1 {
 header .banner-text h3 {
   font: 18px/1.9em "librebaskerville-regular", serif;
   color: white;
-  z-index: 1000;
   margin: 0 auto;
   width: 70%;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
@@ -796,6 +791,15 @@ call-to-action .button {
   width: 100%;
   overflow: hidden;
 }
+/* #testimonials:after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+} */
 #testimonials .text-container {
   padding-top: 96px;
   padding-bottom: 66px;
