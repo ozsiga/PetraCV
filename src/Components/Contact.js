@@ -144,22 +144,18 @@ class Contact extends Component {
                 <button type="submit">Send</button>
               </p>
           </form> */}
-            <Form onSubmit={this.handleSubmit} data-netlify="true">
+            <Form name="contact" method="POST" data-netlify="true" id="my-form">
               <FormGroup>
                 <Label for="name">Name: </Label>
-                <Input type="text" name="name" onChange={this.handleChange} />
+                <Input type="text" name="name" />
               </FormGroup>
               <FormGroup>
                 <Label for="email">Email: </Label>
-                <Input type="email" name="email" onChange={this.handleChange} />
+                <Input type="email" name="email" />
               </FormGroup>
               <FormGroup>
                 <Label for="message">Message: </Label>
-                <Input
-                  type="textarea"
-                  name="message"
-                  onChange={this.handleChange}
-                />
+                <Input type="textarea" name="message" />
               </FormGroup>
               <Button type="submit">Submit</Button>
             </Form>
