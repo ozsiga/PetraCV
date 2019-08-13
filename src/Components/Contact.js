@@ -1,16 +1,40 @@
 import React, { Component } from "react";
+import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", message: "" };
+  }
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
   render() {
+    const { name, email, message } = this.state;
     if (this.props.data) {
-      var name = this.props.data.name;
+      //var name = this.props.data.name;
       var street = this.props.data.address.street;
       var city = this.props.data.address.city;
       var state = this.props.data.address.state;
       var zip = this.props.data.address.zip;
       var phone = this.props.data.phone;
-      var email = this.props.data.email;
-      var message = this.props.data.contactmessage;
+      //var email = this.props.data.email;
+      //var message = this.props.data.contactmessage;
     }
 
     return (
@@ -29,11 +53,10 @@ class Contact extends Component {
 
         <div className="row">
           <div className="eight columns">
-            <form
-              action=""
-              method="post"
+            {/* <form
+              method="POST"
               id="contactForm"
-              name="contactForm"
+              name="contact"
               data-netlify="true"
             >
               <fieldset>
@@ -98,9 +121,9 @@ class Contact extends Component {
                   {/* <span id="image-loader">
                     <img alt="" src="images/loader.gif" />
                   </span> */}
-                </div>
+            {/* </div>
               </fieldset>
-            </form>
+            </form> */} */}
             {/* <form name="contact" method="POST" data-netlify="true">
               <p>
                 <label>
@@ -120,8 +143,26 @@ class Contact extends Component {
               <p>
                 <button type="submit">Send</button>
               </p>
-            </form> */}
-
+          </form> */}
+            <Form onSubmit={this.handleSubmit}>
+              <FormGroup>
+                <Label for="name">Name: </Label>
+                <Input type="text" name="name" onChange={this.handleChange} />
+              </FormGroup>
+              <FormGroup>
+                <Label for="email">Email: </Label>
+                <Input type="email" name="email" onChange={this.handleChange} />
+              </FormGroup>
+              <FormGroup>
+                <Label for="message">Message: </Label>
+                <Input
+                  type="textarea"
+                  name="message"
+                  onChange={this.handleChange}
+                />
+              </FormGroup>
+              <Button type="submit">Submit</Button>
+            </Form>
             <div id="message-warning"> Error boy</div>
             <div id="message-success">
               <i className="fa fa-check" />
