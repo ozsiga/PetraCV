@@ -144,7 +144,7 @@ class Contact extends Component {
                 <button type="submit">Send</button>
               </p>
           </form> */}
-            <Form name="contact" method="POST" data-netlify="true" id="my-form">
+            {/* <Form name="contact" method="POST" data-netlify="true" id="my-form">
               <FormGroup>
                 <Label for="name">Name: </Label>
                 <Input type="text" name="name" />
@@ -158,7 +158,36 @@ class Contact extends Component {
                 <Input type="textarea" name="message" />
               </FormGroup>
               <Button type="submit">Submit</Button>
-            </Form>
+            </Form> */}
+            <form name="contact" method="POST" data-netlify="true">
+              <p>
+                <label>
+                  Your Name: <input type="text" name="name" />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Your Email: <input type="email" name="email" />
+                </label>
+              </p>
+              <p>
+                <label>
+                  Your Role:{" "}
+                  <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                  </select>
+                </label>
+              </p>
+              <p>
+                <label>
+                  Message: <textarea name="message" />
+                </label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
             <div id="message-warning"> Error boy</div>
             <div id="message-success">
               <i className="fa fa-check" />
