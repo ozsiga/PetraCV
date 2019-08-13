@@ -406,7 +406,8 @@ ul#nav li.current a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 300px;
+  height: 30px;
   font-weight: bold;
   font-size: 13px;
   color: #fff;
@@ -784,7 +785,8 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-  background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
+  background: #1f1f1f url(../images/bg3.jpg) no-repeat center center;
+  background-color: rgba(0, 0, 0, 0.5);
   background-size: cover !important;
   -webkit-background-size: cover !important;
   background-attachment: fixed;
@@ -998,7 +1000,7 @@ call-to-action .button {
 #contact h1:before {
   font-family: "FontAwesome";
   content: "\f0e0";
-  padding-right: 10px;
+  padding-right: 5px;
   font-size: 72px;
   line-height: 72px;
   text-align: left;
@@ -1014,6 +1016,7 @@ call-to-action .button {
 #contact p.lead {
   font: 18px/36px "opensans-light", sans-serif;
   padding-right: 3%;
+  padding-top: 30px;
 }
 #contact .header-col {
   padding-top: 6px;
@@ -1099,7 +1102,7 @@ call-to-action .button {
 
 /* Twitter Feed */
 #twitter {
-  margin-top: 12px;
+  margin-top: 1px;
   padding: 0;
 }
 #twitter li {

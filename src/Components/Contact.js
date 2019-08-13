@@ -1,40 +1,16 @@
 import React, { Component } from "react";
-import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
-
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
 class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { name: "", email: "", message: "" };
-  }
-  handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state })
-    })
-      .then(() => alert("Success!"))
-      .catch(error => alert(error));
-
-    e.preventDefault();
-  };
-
-  handleChange = e => this.setState({ [e.target.name]: e.target.value });
   render() {
-    const { name, email, message } = this.state;
     if (this.props.data) {
-      //var name = this.props.data.name;
+      var name = this.props.data.name;
       var street = this.props.data.address.street;
       var city = this.props.data.address.city;
       var state = this.props.data.address.state;
       var zip = this.props.data.address.zip;
       var phone = this.props.data.phone;
-      //var email = this.props.data.email;
-      //var message = this.props.data.contactmessage;
+      var email = this.props.data.email;
+      var message = this.props.data.contactmessage;
+      var message1 = this.props.data.contactmessage1;
     }
 
     return (
@@ -48,117 +24,12 @@ class Contact extends Component {
 
           <div className="ten columns">
             <p className="lead">{message}</p>
+            <p>{message1}</p>
           </div>
         </div>
 
         <div className="row">
           <div className="eight columns">
-            {/* <form
-              method="POST"
-              id="contactForm"
-              name="contact"
-              data-netlify="true"
-            >
-              <fieldset>
-                <div>
-                  <label htmlFor="contactName">
-                    Name <span className="required">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    defaultValue=""
-                    size="35"
-                    id="contactName"
-                    name="name"
-                    onChange={this.handleChange}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="contactEmail">
-                    Email <span className="required">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    defaultValue=""
-                    size="35"
-                    id="contactEmail"
-                    name="email"
-                    onChange={this.handleChange}
-                  />
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="contactSubject">Subject</label>
-                  <input
-                    type="text"
-                    defaultValue=""
-                    size="35"
-                    id="contactSubject"
-                    name="subject"
-                    onChange={this.handleChange}
-                  />
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="contactMessage">
-                    Message <span className="required">*</span>
-                  </label>
-                  <textarea
-                    cols="50"
-                    rows="15"
-                    id="contactMessage"
-                    name="message"
-                  />
-                </div>
-
-                <div>
-                  <button className="submit" type="submit">
-                    Submit
-                  </button>
-                  {/* <span id="image-loader">
-                    <img alt="" src="images/loader.gif" />
-                  </span> */}
-            {/* </div>
-              </fieldset>
-            </form> */} */}
-            {/* <form name="contact" method="POST" data-netlify="true">
-              <p>
-                <label>
-                  Your Name: <input type="text" name="name" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Your Email: <input type="email" name="email" />
-                </label>
-              </p>
-              <p>
-                <label>
-                  Message: <textarea name="message" />
-                </label>
-              </p>
-              <p>
-                <button type="submit">Send</button>
-              </p>
-          </form> */}
-            {/* <Form name="contact" method="POST" data-netlify="true" id="my-form">
-              <FormGroup>
-                <Label for="name">Name: </Label>
-                <Input type="text" name="name" />
-              </FormGroup>
-              <FormGroup>
-                <Label for="email">Email: </Label>
-                <Input type="email" name="email" />
-              </FormGroup>
-              <FormGroup>
-                <Label for="message">Message: </Label>
-                <Input type="textarea" name="message" />
-              </FormGroup>
-              <Button type="submit">Submit</Button>
-            </Form> */}
             <form
               name="contact"
               method="post"
@@ -167,54 +38,49 @@ class Contact extends Component {
             >
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
-              <div className="field half first">
+              <div>
                 <label htmlFor="name">Name</label>
                 <input type="text" name="name" id="name" />
               </div>
-              <div className="field half">
+              <div>
                 <label htmlFor="email">Email</label>
                 <input type="text" name="email" id="email" />
               </div>
-              <div className="field">
+              <div>
                 <label htmlFor="message">Message</label>
                 <textarea name="message" id="message" rows="6" />
               </div>
-              <ul className="actions">
-                <li>
-                  <input
-                    type="submit"
-                    value="Send Message"
-                    className="special"
-                  />
-                </li>
-                <li>
-                  <input type="reset" value="Clear" />
-                </li>
-              </ul>
+              <div>
+                <label />
+                <input type="submit" value="Send Message" className="special" />
+              </div>
+              <div>
+                <label />
+                <input type="reset" value="Clear" />
+              </div>
             </form>
-            <div id="message-warning"> Error boy</div>
-            <div id="message-success">
-              <i className="fa fa-check" />
-              Your message was sent, thank you!
-              <br />
-            </div>
           </div>
 
-          <aside className="four columns footer-widgets">
+          <aside
+            className="four columns footer-widgets"
+            style={{ width: "200px", top: "-130px" }}
+          >
             <div className="widget widget_contact">
               <h4>Address and Phone</h4>
               <p className="address">
                 {name}
                 <br />
-                {street} <br />
+                {email}
+                <br />
+                <span>{phone}</span> <br />
                 {city}, {state} {zip}
                 <br />
-                <span>{phone}</span>
+                {street} <br />
               </p>
             </div>
-
+            {/* 
             <div className="widget widget_tweets">
-              <h4 className="widget-title">Latest Tweets</h4>
+              <h4 className="widget-title">Latest Instagram Posts</h4>
               <ul id="twitter">
                 <li>
                   <span>
@@ -240,7 +106,7 @@ class Contact extends Component {
                   </b>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </aside>
         </div>
       </section>

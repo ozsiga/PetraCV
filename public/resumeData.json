@@ -2,10 +2,11 @@
   "main": {
     "name": "Petra Kirschner",
     "occupation": "Event manager/organizer",
-    "description": "Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "description": "Roll down to see my bio, works, experiences and skills. Feel free to contact me.",
     "image": "profilepic.jpg",
-    "bio": "Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+    "bio": "I have experiences mostly in pop concert culture. I have organized and worked for several festivals all over the country, organized and managed numerous concerts, worked for large event organizing companies, did booking management and brand management for an A-listed hungarian band, and earlier I have been working on city branding as well. I learnt how to manage a project, how to delegate tasks and lead a team well, how to negotiate hard and also how to be accurate at administration and contracting. Now, I'm ready to learn more, and seek new challenges.",
+    "contactmessage": "Feel free to contact me! ",
+    "contactmessage1": "I hope our business relationship will continue in the future.",
     "email": "kp.kirschnerpetra@gmail.com ",
     "phone": "+36-20-379-93-97",
     "address": {
@@ -15,18 +16,8 @@
       "zip": "1077"
     },
     "website": "http://www.kirschnerpetraeventmanager.com",
-    "resumedownload": "https://drive.google.com/file/d/1AJKl5HEAihGm-CWOFDv0mx7rjCfdvBd0/view?usp=sharing",
+    "resumedownload": "https://drive.google.com/file/d/1j-7HOVo6L4cLJmuUj_62tlTrh6Pkfo-x/view?usp=sharing",
     "social": [
-      {
-        "name": "facebook",
-        "url": "https://www.facebook.com/petra.kirschner.9",
-        "className": "fa fa-facebook"
-      },
-      {
-        "name": "twitter",
-        "url": "http://twitter.com",
-        "className": "fa fa-twitter"
-      },
       {
         "name": "google-plus",
         "url": "http://googleplus.com",
@@ -36,11 +27,6 @@
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/petra-kirschner-b0a37aa0/",
         "className": "fa fa-linkedin"
-      },
-      {
-        "name": "instagram",
-        "url": "https://www.instagram.com/petra_kirsch/",
-        "className": "fa fa-instagram"
       },
       {
         "name": "skype",
@@ -53,36 +39,52 @@
     "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
-        "school": "Pécsi Tudományegyetem",
-        "degree": "Viselkedéselemző / Pszichológia BSc",
+        "school": "University of Pécs",
+        "degree": "BSc – Bachelor’s degree",
         "graduated": "June 2016",
-        "description": "BSc - alapdiploma"
+        "description": "Behavioral Analyst / Pszichology BSc"
       },
       {
-        "school": "Lukács Oktatási Központ",
-        "degree": "Grafológus",
+        "school": "Lukács Educational Centre",
+        "degree": "OKJ course",
         "graduated": "May 2015",
-        "description": "OKJ-rendszerű tanfolyam"
+        "description": "Graphologist"
+      },
+      {
+        "school": "St. Ladislas High School",
+        "degree": "Graduation",
+        "graduated": "June 2012",
+        "description": "High School in Kőbánya"
+      }
+    ],
+    "language": [
+      {
+        "language": "English",
+        "level": "Advanced/negotiable level"
+      },
+      {
+        "language": "Spanish",
+        "level": "Intermediate/communication level"
       }
     ],
     "work": [
       {
         "company": "ITI MUSIC Kft ",
         "title": "Booking Manager ",
-        "years": "Febr 2019 - Present",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "years": "Febr 2019 - 2019 Sept",
+        "description": "Concert organizing and sales associate for a large Hungarian band. Included job duties: organization of annual/semi-annual plans, negotiation, business, contract management and adminsitration, project management (team leading), brand management and market research."
       },
       {
         "company": "Akvárium Klub Kft",
-        "title": "Program organizer ",
+        "title": "Program/Concert organizer ",
         "years": "Jun 2018 - Apr 2019",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Program and concert organizer, program coordinator at a central event venue of Budapest. Included job duties: Preparation of an annual and semi-annual program plan, continuous monitoring of the market, market research, negotiation, business, contracting and adminsitration, event managment, keeping in touch with domestic and foreign partners, attending professional conferences."
       },
       {
         "company": "Est Café Kft",
-        "title": "Program organizer ",
+        "title": "Program organizer/coordinator ",
         "years": "Jan 2016 - Jun 2018",
-        "description": "Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description": "Program management, concert, festival and cultural event organization for a large company (included several outdoor and indoor venues) Included job duties: Preparation of an annual and semi-annual program plan, negotiation, business, continuous monitoring of the market, complete management of the online communication, project management, meeting schedules, event management, attending professional conferences, overseeing and analyzing foreign markets."
       }
     ],
     "skills": [
@@ -135,12 +137,6 @@
         "category": "Mittomén",
         "image": "pécsiest.jpg",
         "url": "http://pecsiestcafe.hu/"
-      },
-      {
-        "title": "Szenes Klub",
-        "category": "Nyilván valami szervezés",
-        "image": "szenes.jpg",
-        "url": "https://www.facebook.com/szenesklub/"
       }
     ]
   },

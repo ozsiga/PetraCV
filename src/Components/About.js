@@ -46,10 +46,14 @@ class About extends Component {
                   <span>{email}</span>
                 </p>
               </div>
-              <div className="columns download">
+              <div
+                className="columns download"
+                style={{ paddingTop: "100px", paddingLeft: "100px" }}
+              >
                 <p>
                   <a href={resumeDownload} className="button">
-                    <i className="fa fa-download" />Download Resume
+                    <i className="fa fa-download" />
+                    Download Resume
                   </a>
                 </p>
               </div>

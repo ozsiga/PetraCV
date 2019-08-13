@@ -46,6 +46,14 @@ class Resume extends Component {
           </div>
         );
       });
+      var language = this.props.data.language.map(function(language) {
+        return (
+          <div key={language.language}>
+            <h3>{language.language}</h3>
+            <p className="info">{language.level}</p>
+          </div>
+        );
+      });
       var skills = this.props.data.skills.map(function(skills) {
         var className = "bar-expand " + skills.name.toLowerCase();
         return (
@@ -82,6 +90,19 @@ class Resume extends Component {
 
           <div className="nine columns main-col">{work}</div>
         </div>
+        <div className="row work">
+          <div className="three columns header-col">
+            <h1>
+              <span>Languages</span>
+            </h1>
+          </div>
+
+          <div className="nine columns main-col">
+            <div className="row item">
+              <div className="twelve columns">{language}</div>
+            </div>
+          </div>
+        </div>
 
         <div className="row skill">
           <div className="three columns header-col">
@@ -91,14 +112,14 @@ class Resume extends Component {
           </div>
 
           <div className="nine columns main-col">
-            <p>{skillmessage}</p>
+            {/* <p>{skillmessage}</p> */}
 
             <div className="bars">
               {/* <ul className="skills">{skills}</ul> */}
               <div className="container-skillbar">
                 <div className="skillbar clearfix " data-percent="95%">
                   <div className="skillbar-title" style={divStyle}>
-                    <span>Attention to detail</span>
+                    <span>Flexibility, sponteneity</span>
                   </div>
                   <div className="skillbar-bar" style={divStyle} />
                   <div className="skill-bar-percent">95%</div>
@@ -116,7 +137,7 @@ class Resume extends Component {
               <div className="container-skillbar">
                 <div className="skillbar clearfix " data-percent="100%">
                   <div className="skillbar-title" style={divStyle}>
-                    <span>Problem-solving</span>
+                    <span>Quick problem-solving</span>
                   </div>
                   <div className="skillbar-bar" style={divStyle} />
                   <div className="skill-bar-percent">100%</div>
@@ -125,7 +146,7 @@ class Resume extends Component {
               <div className="container-skillbar">
                 <div className="skillbar clearfix " data-percent="93%">
                   <div className="skillbar-title" style={divStyle}>
-                    <span>Negotiation</span>
+                    <span>Creative thinking</span>
                   </div>
                   <div className="skillbar-bar" style={divStyle} />
                   <div className="skill-bar-percent">93%</div>
@@ -134,7 +155,7 @@ class Resume extends Component {
               <div className="container-skillbar">
                 <div className="skillbar clearfix " data-percent="110%">
                   <div className="skillbar-title" style={divStyle}>
-                    <span>Multitasking</span>
+                    <span>Conscientious, accurate work</span>
                   </div>
                   <div className="skillbar-bar" style={divStyle} />
                   <div className="skill-bar-percent">110%</div>
@@ -143,7 +164,25 @@ class Resume extends Component {
               <div className="container-skillbar">
                 <div className="skillbar clearfix " data-percent="96%">
                   <div className="skillbar-title" style={divStyle}>
-                    <span>Budgeting</span>
+                    <span>Meeting deadlines</span>
+                  </div>
+                  <div className="skillbar-bar" style={divStyle} />
+                  <div className="skill-bar-percent">96%</div>
+                </div>
+              </div>
+              <div className="container-skillbar">
+                <div className="skillbar clearfix " data-percent="96%">
+                  <div className="skillbar-title" style={divStyle}>
+                    <span>Good negotiating and business sense</span>
+                  </div>
+                  <div className="skillbar-bar" style={divStyle} />
+                  <div className="skill-bar-percent">96%</div>
+                </div>
+              </div>
+              <div className="container-skillbar">
+                <div className="skillbar clearfix " data-percent="96%">
+                  <div className="skillbar-title" style={divStyle}>
+                    <span>Transparency of processes</span>
                   </div>
                   <div className="skillbar-bar" style={divStyle} />
                   <div className="skill-bar-percent">96%</div>
@@ -152,10 +191,28 @@ class Resume extends Component {
               <div className="container-skillbar">
                 <div className="skillbar clearfix " data-percent="120%">
                   <div className="skillbar-title" style={divStyle}>
-                    <span>Creativity</span>
+                    <span>Excellent task delegation</span>
                   </div>
                   <div className="skillbar-bar" style={divStyle} />
-                  <div className="skill-bar-percent">120%</div>
+                  <div className="skill-bar-percent">105%</div>
+                </div>
+              </div>
+              <div className="container-skillbar">
+                <div className="skillbar clearfix " data-percent="120%">
+                  <div className="skillbar-title" style={divStyle}>
+                    <span>Ability to lead a team</span>
+                  </div>
+                  <div className="skillbar-bar" style={divStyle} />
+                  <div className="skill-bar-percent">105%</div>
+                </div>
+              </div>
+              <div className="container-skillbar">
+                <div className="skillbar clearfix " data-percent="120%">
+                  <div className="skillbar-title" style={divStyle}>
+                    <span>Fast learning ability</span>
+                  </div>
+                  <div className="skillbar-bar" style={divStyle} />
+                  <div className="skill-bar-percent">110%</div>
                 </div>
               </div>
             </div>

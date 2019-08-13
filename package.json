@@ -13,8 +13,7 @@
     "react-mdl": "^1.11.0",
     "react-scripts": "1.0.17",
     "react-skillbars": "^1.5.1",
-    "react-skills-bars": "^1.0.0-development",
-    "reactstrap": "^8.0.1"
+    "react-skills-bars": "^1.0.0-development"
   },
   "scripts": {
     "start": "react-scripts start",
