@@ -144,7 +144,7 @@ class Contact extends Component {
                 <button type="submit">Send</button>
               </p>
           </form> */}
-            <Form onSubmit={this.handleSubmit}>
+            <Form onSubmit={this.handleSubmit} data-netlify="true">
               <FormGroup>
                 <Label for="name">Name: </Label>
                 <Input type="text" name="name" onChange={this.handleChange} />
