@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "chart.js": "^2.8.0",
+    "gatsby": "^2.13.61",
     "jquery": "^3.2.1",
     "react": "^16.9.0",
     "react-chartjs-2": "^2.7.6",
