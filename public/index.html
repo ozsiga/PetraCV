@@ -23,6 +23,21 @@
   </head>
 
   <body>
+    <Form name="contact" method="POST" data-netlify="true" id="my-form" hidden>
+      <FormGroup>
+        <Label for="name">Name: </Label>
+        <Input type="text" name="name" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="email">Email: </Label>
+        <Input type="email" name="email" />
+      </FormGroup>
+      <FormGroup>
+        <Label for="message">Message: </Label>
+        <Input type="textarea" name="message" />
+      </FormGroup>
+      <Button type="submit">Submit</Button>
+    </Form>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
