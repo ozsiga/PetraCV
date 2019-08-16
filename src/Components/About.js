@@ -13,6 +13,7 @@ class About extends Component {
       var phone = this.props.data.phone;
       var email = this.props.data.email;
       var resumeDownload = this.props.data.resumedownload;
+      var resumeDownload1 = this.props.data.resumedownload1;
     }
 
     return (
@@ -48,12 +49,18 @@ class About extends Component {
               </div>
               <div
                 className="columns download"
-                style={{ paddingTop: "100px", paddingLeft: "100px" }}
+                style={{ paddingTop: "50px", paddingLeft: "100px" }}
               >
                 <p>
                   <a href={resumeDownload} className="button">
                     <i className="fa fa-download" />
                     Download Resume
+                  </a>
+                </p>
+                <p>
+                  <a href={resumeDownload1} className="button">
+                    <i className="fa fa-download" />
+                    Önéletrajz Letöltése
                   </a>
                 </p>
               </div>

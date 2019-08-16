@@ -7,6 +7,7 @@ class Header extends Component {
       var occupation = this.props.data.occupation;
       var description = this.props.data.description;
       var city = this.props.data.address.city;
+      var message = this.props.data.contactmessage;
       var networks = this.props.data.social.map(function(network) {
         return (
           <li key={network.name}>
@@ -66,7 +67,8 @@ class Header extends Component {
           <div className="banner-text">
             <h1 className="responsive-headline">I'm {name}.</h1>
             <h3>
-              I'm a {city} based <span>{occupation}</span>. {description}.
+              I'm a {city} based <span>{occupation}</span>.<br /> {description}
+              <br /> {message}!
             </h3>
             <hr />
             <ul className="social">{networks}</ul>

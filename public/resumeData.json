@@ -1,11 +1,11 @@
 {
   "main": {
     "name": "Petra Kirschner",
-    "occupation": "Event manager/organizer",
-    "description": "Roll down to see my bio, works, experiences and skills. Feel free to contact me",
+    "occupation": "Potential employee, seeking for new challenges",
+    "description": "Roll down to see my bio, works, experiences and skills",
     "image": "profilepic.jpg",
-    "bio": "I have experiences mostly in pop concert culture. I have organized and worked for several festivals all over the country, organized and managed numerous concerts, worked for large event organizing companies, did booking management and brand management for an A-listed hungarian band, and earlier I have been working on city branding as well. I learnt how to manage a project, how to delegate tasks and lead a team well, how to negotiate hard and also how to be accurate at administration and contracting. Now, I'm ready to learn more, and seek new challenges.",
-    "contactmessage": "Feel free to contact me! ",
+    "bio": "I have experiences mostly in event and concert organizing, but now I am open for new challenges, yearning to learn more, and ready to jump out of my comfort zone.I have organized and worked for several pop festivals all over the country, organized and managed numerous concerts, worked for large event organizing companies, did booking management and brand management for an A-listed hungarian band and earlier I have been working on city branding as well. I learnt how to manage a project, how to delegate tasks and lead a team well, how to negotiate and business hard and also how to be accurate at administration and contracting.",
+    "contactmessage": "Feel free to contact me",
     "contactmessage1": "I hope our business relationship will continue in the future.",
     "email": "kp.kirschnerpetra@gmail.com ",
     "phone": "+36-20-379-93-97",
@@ -16,7 +16,8 @@
       "zip": "1077"
     },
     "website": "http://www.kirschnerpetraeventmanager.com",
-    "resumedownload": "https://drive.google.com/file/d/1j-7HOVo6L4cLJmuUj_62tlTrh6Pkfo-x/view?usp=sharing",
+    "resumedownload": "https://drive.google.com/open?id=1NI2cIxe0Kc03-ZexnkBoT9PCU79Pj3bn",
+    "resumedownload1": "https://drive.google.com/open?id=1SH-W1W-4lrrBj9wP0VNdEUyTCS9Vj5tZ",
     "social": [
       {
         "name": "google-plus",
@@ -25,7 +26,7 @@
       },
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/petra-kirschner-b0a37aa0/",
+        "url": "https://www.linkedin.com/in/petra-kirschner-823506191/",
         "className": "fa fa-linkedin"
       },
       {
@@ -72,19 +73,31 @@
         "company": "ITI MUSIC Kft ",
         "title": "Booking Manager ",
         "years": "Febr 2019 - 2019 Sept",
-        "description": "Concert organizing and sales associate for a large Hungarian band. Included job duties: organization of annual/semi-annual plans, negotiation, business, contract management and adminsitration, project management (team leading), brand management and market research."
+        "description": "Concert organizing and sales associate for a large Hungarian band. Included job duties:",
+        "description1": "• organizing 5-10 concerts for 100-2000 people per month with a budget of approx 500 000 – 1 000 000 thousand forints",
+        "description2": "• organization of annual/semi-annual plans, negotiation, business, contract management and adminsitration",
+        "description3": "• project management (team leading), brand management and market research",
+        "description4": "• Outstanding outcome: Intim Torna Illegál, 20.06.2019., 1500 people, budget: approx 2 000 000 forints."
       },
       {
         "company": "Akvárium Klub Kft",
         "title": "Program/Concert organizer ",
         "years": "Jun 2018 - Apr 2019",
-        "description": "Program and concert organizer, program coordinator at a central event venue of Budapest. Included job duties: Preparation of an annual and semi-annual program plan, continuous monitoring of the market, market research, negotiation, business, contracting and adminsitration, event managment, keeping in touch with domestic and foreign partners, attending professional conferences."
+        "description": "Program and concert organizer, program coordinator at a central event venue of Budapest. Included job duties: ",
+        "description1": "• organizing 8-20 concerts for 500-1500 people per month with costings of approx 200 000-500 000 forints, in a 10-people team,",
+        "description2": "• Preparation of an annual and semi-annual program plan, continuous monitoring of the market, market research, negotiation, business, contracting and adminsitration,",
+        "description3": "• event managment, keeping in touch with domestic and foreign partners, attending professional conferences, outsanding outcome: The Four Owls (UK), 26.04.2019. Akvárium Klub, 600 people with the budget of approx 800 000 forints.",
+        "description4": "• Outsanding outcome: The Four Owls (UK), 26.04.2019. Akvárium Klub, 600 people with the budget of approx 800 000 forints."
       },
       {
         "company": "Est Café Kft",
         "title": "Program organizer/coordinator ",
         "years": "Jan 2016 - Jun 2018",
-        "description": "Program management, concert, festival and cultural event organization for a large company (included several outdoor and indoor venues) Included job duties: Preparation of an annual and semi-annual program plan, negotiation, business, continuous monitoring of the market, complete management of the online communication, project management, meeting schedules, event management, attending professional conferences, overseeing and analyzing foreign markets."
+        "description": "Organizing 10-50 concerts and cultural events per month for 4 venues, approximately for 100-600 people in a 5-people team with a costing of 100 000 -300 000 forints.",
+        "description1": "Included job duties: ",
+        "description2": "Preparation of an annual and semi-annual program plan, negotiation, business, continuous monitoring of the market, complete management of the online communication, project management, meeting schedules, event management, attending professional conferences, overseeing and analyzing foreign markets",
+        "description3": "• Outstanding outcome: ",
+        "description4": "University of Pécs, Student Festival, (Pécsi Egyetemi Napok, April 2018. Approx 4 000 people, with a budget of approx 5 000 000 forints, Halott Pénz concert, September 2017, approx 10 000 people, Széchenyi tér, Pécs, with a budget of approx 2 000 000 forints."
       }
     ],
     "skills": [
