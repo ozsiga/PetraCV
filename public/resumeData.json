@@ -15,15 +15,9 @@
       "state": "Pest",
       "zip": "1077"
     },
-    "website": "http://www.kirschnerpetraeventmanager.com",
     "resumedownload": "https://drive.google.com/uc?export=download&id=1_EoNPDNOWvZ58o_EP12SBPC0kH7nQwso",
     "resumedownload1": "https://drive.google.com/uc?export=download&id=17t5p-OUtK04WJ3NApaZqcbyoj2eJw3aE",
     "social": [
-      {
-        "name": "google-plus",
-        "url": "http://googleplus.com",
-        "className": "fa fa-google-plus"
-      },
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/petra-kirschner-823506191/",
@@ -31,7 +25,7 @@
       },
       {
         "name": "skype",
-        "url": "http://skype.com",
+        "url": "https://join.skype.com/invite/hGqxOfLQDU4P",
         "className": "fa fa-skype"
       }
     ]
